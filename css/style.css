@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    background-size: cover;
+    /*height: 100%;*/
+
+}
+.banner_cont{
+    background-color: #DCE5E2;
+    border-radius: 32px;
+    position: relative;
+}

@@ -1,0 +1,142 @@
+
+.container {
+  max-width: 1294px;
+}
+
+header {
+  margin-bottom: 28px;
+
+  .navbar {
+    padding: 20px 0;
+
+  }
+
+  .navbar-light .navbar-nav .nav-item{
+    &:last-of-type{
+      padding-left: 10px;
+    }
+    .nav-link {
+      color: #000000;
+      font-family: 'Inter',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      padding-right: 26px;
+    }
+
+  }
+
+
+  .bg-light {
+    background-color: #FFFFFF !important;
+  }
+}
+.navbar-brand{
+  margin-right: 251px;
+}
+
+.banner_ground {
+  background-color: #DCE5E2;
+  border-radius: 32px;
+}
+
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 56px;
+
+  h1 {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px;
+    color: #000000;
+    margin-bottom: 19px;
+  }
+
+  p {
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  a {
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+  .btn {
+    padding: 14px 53px;
+    border: 1px solid #000000;
+    border-radius: 200px;
+  }
+
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 194px;
+  height: 2px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #000000;
+}
+
+.owl-dots {
+  position: absolute;
+  left: 25%;
+  bottom: 34px;
+  z-index: 10;
+
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  left: -5px;
+  top: 45%;
+
+  &:before {
+    font-family: "Font Awesome 6 Free", sans-serif;
+    font-weight: 900;
+    content: "\f053";
+    font-size: 24px;
+
+  }
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  right: -5px;
+  top: 45%;
+
+  &:before {
+    font-family: "Font Awesome 6 Free", sans-serif;
+    font-weight: 900;
+    content: "\f054";
+    font-size: 24px;
+  }
+}
+
+
+
+

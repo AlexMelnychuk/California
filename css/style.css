@@ -1,0 +1,282 @@
+.container {
+  max-width: 1294px;
+}
+
+header .navbar {
+  padding: 20px 0;
+}
+header .navbar-light .navbar-nav .nav-item:last-of-type {
+  padding-left: 10px;
+}
+header .navbar-light .navbar-nav .nav-item .nav-link {
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  padding-right: 26px;
+}
+header .bg-light {
+  background-color: #FFFFFF !important;
+}
+
+.navbar-brand {
+  margin-right: 251px;
+}
+
+.banner_ground {
+  background-color: #DCE5E2;
+  border-radius: 32px;
+}
+
+.main_banner {
+  background-color: #FFFFFF;
+  padding-top: 28px;
+  padding-bottom: 75px;
+}
+.main_banner .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 56px;
+}
+.main_banner .description h1 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 70px;
+  color: #000000;
+  margin-bottom: 19px;
+}
+.main_banner .description p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.main_banner .description a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.main_banner .description .btn {
+  padding: 14px 53px;
+  border: 1px solid #000000;
+  border-radius: 200px;
+}
+.main_banner .description .banner {
+  width: 100%;
+  height: auto;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 194px;
+  height: 2px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #000000;
+}
+
+.owl-dots {
+  position: absolute;
+  left: 25%;
+  bottom: 34px;
+  z-index: 10;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  left: -5px;
+  top: 45%;
+}
+.owl-nav .owl-prev:before {
+  font-family: "Font Awesome 6 Free", sans-serif;
+  font-weight: 900;
+  content: "\f053";
+  font-size: 24px;
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  right: -5px;
+  top: 45%;
+}
+.owl-nav .owl-next:before {
+  font-family: "Font Awesome 6 Free", sans-serif;
+  font-weight: 900;
+  content: "\f054";
+  font-size: 24px;
+}
+
+.latest_offers {
+  background-color: #FFFFFF;
+  padding-bottom: 78px;
+}
+.latest_offers .custom_p {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.latest_offers .custom_c p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 0;
+}
+.latest_offers .custom_c a {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  text-decoration: none;
+}
+.latest_offers .topic h3 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  color: #000000;
+}
+.latest_offers .topic p {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 55px;
+}
+.latest_offers .shadow {
+  -webkit-box-shadow: -2px -2px 20px 10px #CFCFCF;
+  box-shadow: -2px -2px 20px 10px #CFCFCF;
+}
+.latest_offers .card {
+  border-radius: 0.5rem;
+}
+.latest_offers .c_1 {
+  margin-bottom: 72px;
+}
+.latest_offers .c_1 img {
+  max-width: 500px;
+  position: relative;
+  left: 42px;
+  top: 0;
+}
+.latest_offers .c_1 .card-body {
+  padding: 0 42px;
+}
+.latest_offers .c_2 {
+  background-color: #FFFFFF;
+  min-height: 270px;
+  border-radius: 0.5rem;
+}
+.latest_offers .c_2 img {
+  position: relative;
+  left: 42px;
+  margin-right: 42px;
+}
+.latest_offers .c_3 {
+  padding-top: 144px;
+  padding-left: 16px;
+  min-height: 792px;
+}
+.latest_offers .c_3 img {
+  height: 367px;
+  margin-bottom: 41px;
+}
+.latest_offers .c_4 {
+  min-height: 792px;
+  padding-top: 94px;
+  padding-bottom: 93px;
+}
+.latest_offers .c_4 img {
+  height: 425px;
+}
+
+.save_salled {
+  background-color: #FFFFFF;
+  padding-bottom: 74px;
+}
+.save_salled h3 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  color: #000000;
+  margin-bottom: 9px;
+}
+.save_salled p {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 59px;
+}
+.save_salled .card {
+  border: none;
+  min-height: 400px;
+}
+.save_salled .card img {
+  padding: 0 22px;
+  height: 214px;
+}
+.save_salled .card .card-body {
+  padding-top: 35px;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.save_salled .card .card-body a {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 9px;
+}
+.save_salled .card .card-body .card-description {
+  margin-top: 9px;
+  min-height: 81px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.save_salled .card .card-body p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.save_salled .card .card-body p:first-of-type {
+  font-size: 14px;
+  line-height: 17px;
+  color: #4B4B4B;
+}
+.save_salled .card .card-body p:last-of-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */

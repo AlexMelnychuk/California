@@ -1,24 +1,30 @@
+$inter_font: 'Inter', sans-serif;
+$readex_font: 'Readex Pro', sans-serif;
+$normal_font: normal;
+$black_color: #000000;
+$white_color: #FFFFFF;
+$main_color: #F5F5F5;
+$card_radius: 0.5rem;
 
 .container {
   max-width: 1294px;
 }
 
 header {
-  margin-bottom: 28px;
-
   .navbar {
     padding: 20px 0;
 
   }
 
-  .navbar-light .navbar-nav .nav-item{
-    &:last-of-type{
+  .navbar-light .navbar-nav .nav-item {
+    &:last-of-type {
       padding-left: 10px;
     }
+
     .nav-link {
-      color: #000000;
-      font-family: 'Inter',sans-serif;
-      font-style: normal;
+      color: $black_color;
+      font-family: $inter_font;
+      font-style: $normal_font;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
@@ -30,10 +36,11 @@ header {
 
 
   .bg-light {
-    background-color: #FFFFFF !important;
+    background-color: $white_color !important;
   }
 }
-.navbar-brand{
+
+.navbar-brand {
   margin-right: 251px;
 }
 
@@ -42,56 +49,60 @@ header {
   border-radius: 32px;
 }
 
+.main_banner {
+  background-color: $white_color;
+  padding-top: 28px;
+  padding-bottom: 75px;
 
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 56px;
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 56px;
 
-  h1 {
-    font-family: 'Readex Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 58px;
-    line-height: 70px;
-    color: #000000;
-    margin-bottom: 19px;
-  }
+    h1 {
+      font-family: $readex_font;
+      font-style: $normal_font;
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 70px;
+      color: $black_color;
+      margin-bottom: 19px;
+    }
 
-  p {
-    font-family: 'Inter',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    margin-bottom: 30px;
-  }
+    p {
+      font-family: $inter_font;
+      font-style: $normal_font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $black_color;
+      margin-bottom: 30px;
+    }
 
-  a {
-    font-family: 'Inter',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: capitalize;
-    color: #000000;
-  }
+    a {
+      font-family: $inter_font;
+      font-style: $normal_font;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: capitalize;
+      color: $black_color;
+    }
 
-  .btn {
-    padding: 14px 53px;
-    border: 1px solid #000000;
-    border-radius: 200px;
-  }
+    .btn {
+      padding: 14px 53px;
+      border: 1px solid $black_color;
+      border-radius: 200px;
+    }
 
-  .banner {
-    width: 100%;
-    height: auto;
+    .banner {
+      width: 100%;
+      height: auto;
+    }
   }
 }
-
 
 .owl-theme .owl-dots .owl-dot span {
   width: 194px;
@@ -99,7 +110,7 @@ header {
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #000000;
+  background: $black_color;
 }
 
 .owl-dots {
@@ -137,6 +148,182 @@ header {
   }
 }
 
+.latest_offers {
+  background-color: $white_color;
+  padding-bottom: 78px;
+
+  .custom_p {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .custom_c {
+    p {
+      font-family: $inter_font;
+      font-style: $normal_font;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      color: $black_color;
+      margin-bottom: 0;
+    }
+
+    a {
+      font-family: $readex_font;
+      font-style: $normal_font;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+      color: $black_color;
+      text-decoration: none;
+    }
+  }
+
+  .topic {
+    h3 {
+      font-family: $readex_font;
+      font-style: $normal_font;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      color: $black_color;
+    }
+
+    p {
+      font-family: $readex_font;
+      font-style: $normal_font;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $black_color;
+      margin-bottom: 55px;
+    }
+  }
+
+  .shadow {
+    -webkit-box-shadow: -2px -2px 20px 10px #CFCFCF;
+    box-shadow: -2px -2px 20px 10px #CFCFCF;
+  }
+
+  .card {
+    border-radius: $card_radius;
+  }
+
+  .c_1 {
+    margin-bottom: 72px;
+    img {
+      max-width: 500px;
+      position: relative;
+      left: 42px;
+      top: 0;
+    }
+
+    .card-body {
+      padding: 0 42px;
+    }
+  }
+
+  .c_2 {
+    background-color: $white_color;
+    min-height: 270px;
+    border-radius: $card_radius;
+
+    img {
+      position: relative;
+      left: 42px;
+      margin-right: 42px;
+    }
+  }
+
+  .c_3 {
+    padding-top: 144px;
+    padding-left: 16px;
+    min-height: 792px;
+    img {
+      height: 367px;
+      margin-bottom: 41px;
+    }
+  }
+  .c_4{
+    min-height: 792px;
+    padding-top: 94px;
+    padding-bottom: 93px;
+    img{
+      height: 425px;
+    }
+
+  }
+}
+.save_salled{
+  background-color: $white_color;
+  padding-bottom: 74px;
+  h3{
+    font-family: $readex_font;
+    font-style: $normal_font;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: $black_color;
+    margin-bottom: 9px;
+  }
+  p{
+    font-family: $readex_font;
+    font-style: $normal_font;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: $black_color;
+    margin-bottom: 59px;
+  }
+  .card{
+    border: none;
+    min-height: 400px;
+    img{
+      padding: 0 22px;
+      height: 214px;
+    }
+    .card-body{
+      padding-top: 35px ;
+      padding-left: 0;
+      padding-bottom: 0;
+      a{
+        font-family: $readex_font;
+        font-style: $normal_font;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        color: $black_color;
+        margin-top: 9px;
+      }
+      .card-description{
+        margin-top: 9px;
+        min-height: 81px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      p{
+        font-family: $inter_font;
+        font-style: $normal_font;
+        font-weight: 400;
+        margin-bottom: 0;
+
+        &:first-of-type{
+          font-size: 14px;
+          line-height: 17px;
+          color: #4B4B4B;
+        }
+        &:last-of-type{
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: $black_color;
+        }
+      }
+    }
+
+  }
 
 
+}
 

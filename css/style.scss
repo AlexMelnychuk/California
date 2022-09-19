@@ -211,6 +211,7 @@ header {
 
   .c_1 {
     margin-bottom: 72px;
+
     img {
       max-width: 500px;
       position: relative;
@@ -239,25 +240,30 @@ header {
     padding-top: 144px;
     padding-left: 16px;
     min-height: 792px;
+
     img {
       height: 367px;
       margin-bottom: 41px;
     }
   }
-  .c_4{
+
+  .c_4 {
     min-height: 792px;
     padding-top: 94px;
     padding-bottom: 93px;
-    img{
+
+    img {
       height: 425px;
     }
 
   }
 }
-.save_salled{
+
+.save_selled {
   background-color: $white_color;
   padding-bottom: 74px;
-  h3{
+
+  h3 {
     font-family: $readex_font;
     font-style: $normal_font;
     font-weight: 400;
@@ -266,7 +272,8 @@ header {
     color: $black_color;
     margin-bottom: 9px;
   }
-  p{
+
+  p {
     font-family: $readex_font;
     font-style: $normal_font;
     font-weight: 400;
@@ -275,18 +282,21 @@ header {
     color: $black_color;
     margin-bottom: 59px;
   }
-  .card{
+
+  .card {
     border: none;
     min-height: 400px;
-    img{
+
+    img {
       padding: 0 22px;
-      height: 214px;
     }
-    .card-body{
-      padding-top: 35px ;
+
+    .card-body {
+      padding-top: 35px;
       padding-left: 0;
       padding-bottom: 0;
-      a{
+
+      a {
         font-family: $readex_font;
         font-style: $normal_font;
         font-weight: 400;
@@ -295,25 +305,28 @@ header {
         color: $black_color;
         margin-top: 9px;
       }
-      .card-description{
+
+      .card-description {
         margin-top: 9px;
         min-height: 81px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
-      p{
+
+      p {
         font-family: $inter_font;
         font-style: $normal_font;
         font-weight: 400;
         margin-bottom: 0;
 
-        &:first-of-type{
+        &:first-of-type {
           font-size: 14px;
           line-height: 17px;
           color: #4B4B4B;
         }
-        &:last-of-type{
+
+        &:last-of-type {
           font-weight: 400;
           font-size: 18px;
           line-height: 22px;
@@ -321,9 +334,79 @@ header {
         }
       }
     }
+  }
+}
 
+.see-best {
+  background-color: $white_color;
+  padding-bottom: 28px;
+
+  h3 {
+    font-family: $readex_font;
+    font-style: $normal_font;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: $black_color;
+    margin-bottom: 9px;
+  }
+
+  p {
+    font-family: $readex_font;
+    font-style: $normal_font;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: $black_color;
+    margin-bottom: 56px;
   }
 
 
-}
+  .card {
+    background: #F8F9FA;
+    border-radius: 16px;
+    border-color: #F8F9FA;
+//-----------------------------------------
+    img {
+      height: 250px;
+      width: auto;
+      object-fit: contain;
+      margin-top: 10px;
+    }
+//----------------------------------------------
+    .card-body {
+      padding-top: 41px;
+      p {
+        margin-bottom: 0;
+      }
 
+      h5 {
+        font-family: $readex_font;
+        font-style: $normal_font;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 35px;
+        color: $black_color;
+        margin-bottom: 30px;
+      }
+
+      a {
+        font-family: $inter_font;
+        font-style: $normal_font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: $black_color;
+      }
+
+      .btn {
+        padding: 14px 63px;
+        border: 1px solid $black_color;
+        border-radius: 200px;
+      }
+    }
+
+
+  }
+}

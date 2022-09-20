@@ -286,15 +286,19 @@ header {
   .card {
     border: none;
     min-height: 400px;
+    background-color: #F8F9FA;;
+    border-radius: 16px;
 
     img {
-      padding: 0 22px;
+      height: 250px;
+      object-fit: none;
+      margin-top: 28px;
     }
 
     .card-body {
       padding-top: 35px;
-      padding-left: 0;
-      padding-bottom: 0;
+      //padding-left: 0;
+      //padding-bottom: 0;
 
       a {
         font-family: $readex_font;
@@ -566,6 +570,43 @@ header {
       line-height: 19px;
       color: $black_color;
       margin-bottom: 14px;
+    }
+
+    img {
+      padding-bottom: 14px;
+      object-fit: none;
+    }
+
+    .email_box {
+      input {
+        background-color: #DCE5E2;
+        box-sizing: border-box;
+        width: 285px;
+        height: 50px;
+        border: 1px solid $black_color;
+        border-radius: 54px 0 0 54px;
+        padding-left: 32px;
+        font-family: $inter_font;
+        font-style: $normal_font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black_color;
+        outline-color: $black_color;
+      }
+      button {
+        box-sizing: border-box;
+        width: 115px;
+        border: 1px solid $black_color;
+        border-radius: 0 54px 54px 0;
+        font-family: $inter_font;
+        font-style: $normal_font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+      }
     }
   }
 }

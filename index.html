@@ -52,16 +52,49 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="images/loupe.svg" alt="loupe"></a>
+                        <div class="dropdown">
+                            <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                <img src="images/loupe.svg" alt="search">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form action="#" method="get">
+                                    <div>
+                                        <label for="search"></label>
+                                        <input type="text" id="search" name="looking_for"
+                                               placeholder="Search keyword"
+                                               required="required" minlength="2">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="images/trolley.svg" alt="trolley"></a>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                            <img src="images/trolley.svg" alt="shopping cart">
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Your shopping cart</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>You have 0 items</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
-                <!--                <form class="form-inline my-2 my-lg-0">-->
-                <!--                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                <!--                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-                <!--                </form>-->
             </div>
         </nav>
 
@@ -377,16 +410,20 @@
             </div>
             <div class="col-12 mb-5 line"></div>
             <div class="col-md-12 justify-content-between">
-                <p>Made By:
+                <a href="#">
+                    Made By:
                     <span>
                         Azwedo
                     </span>
-                </p>
-                <p>Powered by:
+                </a>
+
+                <a href="#">
+                    Powered by:
                     <span>
                         Webflow
                     </span>
-                </p>
+                </a>
+
             </div>
         </div>
     </div>

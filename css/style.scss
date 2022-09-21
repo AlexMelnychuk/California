@@ -12,25 +12,23 @@ $card_radius: 0.5rem;
   }
 }
 
-@mixin max-screen($res) {
-  @media screen and (max-width: $res) {
-    @content;
-  }
-}
-
 .container {
   max-width: 1294px;
 }
 
 header {
   .navbar {
-    padding: 20px 0;
-
+    padding: 25px 0;
   }
 
   .navbar-light .navbar-nav .nav-item {
-    &:last-of-type {
-      padding-left: 10px;
+    @include min-screen(992px) {
+      &:last-of-type {
+        padding-left: 10px;
+      }
+      .dropdown-menu {
+        left: -142px;
+      }
     }
 
     .nav-link {
@@ -51,7 +49,8 @@ header {
     background-color: $white_color !important;
   }
 }
-@include min-screen(1041px){
+
+@include min-screen(1041px) {
   .navbar-brand {
     margin-right: 251px;
   }
@@ -119,14 +118,15 @@ header {
   }
 }
 
-@include min-screen(600px){
+@include min-screen(600px) {
   .owl-theme .owl-dots .owl-dot span {
     width: 50px;
     height: 2px;
   }
 
 }
-@include min-screen(1000px){
+
+@include min-screen(1000px) {
   .owl-theme .owl-dots .owl-dot span {
     width: 194px;
     height: 2px;
@@ -142,11 +142,9 @@ header {
 }
 
 
-
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: $black_color;
 }
-
 
 
 .owl-nav .owl-prev {
@@ -231,10 +229,22 @@ header {
   .shadow {
     -webkit-box-shadow: -2px -2px 20px 10px #CFCFCF;
     box-shadow: -2px -2px 20px 10px #CFCFCF;
+
+    &:hover {
+      box-shadow: -2px -2px 20px 10px #000000;
+    }
   }
 
   .card {
     border-radius: $card_radius;
+    @include min-screen(1170px) {
+      &:hover {
+        position: relative;
+        top: 30px;
+      }
+    }
+
+
   }
 
   .c_1 {
@@ -252,23 +262,28 @@ header {
     background-color: $white_color;
     border-radius: $card_radius;
     padding-right: 42px;
-    margin-bottom: 10px;
-    @include min-screen(1170px){
+    @include min-screen(1170px) {
       display: flex;
+      &:hover {
+        position: relative;
+        top: 40px;
+      }
     }
-    @include min-screen(400px){
+    @include min-screen(400px) {
       padding-left: 42px;
     }
+
     img {
       max-width: 260px;
       object-fit: contain;
-      @include min-screen(400px){
+      @include min-screen(400px) {
         max-width: 381px;
       }
     }
-    .custom_c{
+
+    .custom_c {
       padding: 20px;
-      @include min-screen(1170px){
+      @include min-screen(1170px) {
         padding: 0;
       }
     }
@@ -286,7 +301,6 @@ header {
   }
 
   .c_4 {
-    //min-height: 792px;
     padding-top: 95px;
     padding-bottom: 79px;
 
@@ -328,6 +342,12 @@ header {
     min-height: 400px;
     background-color: #F8F9FA;;
     border-radius: 16px;
+    @include min-screen(1170px) {
+      &:hover {
+        position: relative;
+        top: 30px;
+      }
+    }
 
     img {
       width: 247px;
@@ -337,8 +357,7 @@ header {
 
     .card-body {
       padding-top: 35px;
-      //padding-left: 0;
-      //padding-bottom: 0;
+
 
       a {
         font-family: $readex_font;
@@ -410,14 +429,19 @@ header {
     background: #F8F9FA;
     border-radius: 16px;
     border-color: #F8F9FA;
-    //-----------------------------------------
+    @include min-screen(1170px) {
+      &:hover {
+        position: relative;
+        top: 30px;
+      }
+    }
+
     img {
       height: 250px;
       object-fit: contain;
       margin-top: 10px;
     }
 
-    //----------------------------------------------
     .card-body {
       padding-top: 41px;
 
@@ -631,7 +655,7 @@ header {
         line-height: 17px;
         color: $black_color;
         outline-color: $black_color;
-        @include min-screen(540px){
+        @include min-screen(540px) {
           width: 285px;
         }
       }
@@ -719,10 +743,11 @@ footer {
   }
 
   .col-md-12 {
-    @include min-screen(440px){
+    @include min-screen(440px) {
       display: flex;
     }
-    p {
+
+    a {
       margin-bottom: 0;
       display: block;
       font-family: $readex_font;
@@ -737,6 +762,7 @@ footer {
         font-size: 18px;
         line-height: 22px;
       }
+
       &:after {
         content: url("../images/arrow.svg");
         position: relative;

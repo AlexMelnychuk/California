@@ -3,10 +3,15 @@
 }
 
 header .navbar {
-  padding: 20px 0;
+  padding: 25px 0;
 }
-header .navbar-light .navbar-nav .nav-item:last-of-type {
-  padding-left: 10px;
+@media screen and (min-width: 992px) {
+  header .navbar-light .navbar-nav .nav-item:last-of-type {
+    padding-left: 10px;
+  }
+  header .navbar-light .navbar-nav .nav-item .dropdown-menu {
+    left: -142px;
+  }
 }
 header .navbar-light .navbar-nav .nav-item .nav-link {
   color: #000000;
@@ -174,8 +179,17 @@ header .bg-light {
   -webkit-box-shadow: -2px -2px 20px 10px #CFCFCF;
   box-shadow: -2px -2px 20px 10px #CFCFCF;
 }
+.latest_offers .shadow:hover {
+  box-shadow: -2px -2px 20px 10px #000000;
+}
 .latest_offers .card {
   border-radius: 0.5rem;
+}
+@media screen and (min-width: 1170px) {
+  .latest_offers .card:hover {
+    position: relative;
+    top: 30px;
+  }
 }
 .latest_offers .c_1 {
   margin-bottom: 11px;
@@ -189,11 +203,14 @@ header .bg-light {
   background-color: #FFFFFF;
   border-radius: 0.5rem;
   padding-right: 42px;
-  margin-bottom: 10px;
 }
 @media screen and (min-width: 1170px) {
   .latest_offers .c_2 {
     display: flex;
+  }
+  .latest_offers .c_2:hover {
+    position: relative;
+    top: 40px;
   }
 }
 @media screen and (min-width: 400px) {
@@ -264,6 +281,12 @@ header .bg-light {
   background-color: #F8F9FA;
   border-radius: 16px;
 }
+@media screen and (min-width: 1170px) {
+  .save_selled .card:hover {
+    position: relative;
+    top: 30px;
+  }
+}
 .save_selled .card img {
   width: 247px;
   object-fit: cover;
@@ -332,6 +355,12 @@ header .bg-light {
   background: #F8F9FA;
   border-radius: 16px;
   border-color: #F8F9FA;
+}
+@media screen and (min-width: 1170px) {
+  .see-best .card:hover {
+    position: relative;
+    top: 30px;
+  }
 }
 .see-best .card img {
   height: 250px;
@@ -598,7 +627,7 @@ footer .line {
     display: flex;
   }
 }
-footer .col-md-12 p {
+footer .col-md-12 a {
   margin-bottom: 0;
   display: block;
   font-family: "Readex Pro", sans-serif;
@@ -608,12 +637,12 @@ footer .col-md-12 p {
   line-height: 22px;
   color: #000000;
 }
-footer .col-md-12 p span {
+footer .col-md-12 a span {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   line-height: 22px;
 }
-footer .col-md-12 p:after {
+footer .col-md-12 a:after {
   content: url("../images/arrow.svg");
   position: relative;
   top: 7px;

@@ -136,7 +136,7 @@ header .bg-light {
   background-color: #FFFFFF;
   padding-bottom: 68px;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 992px) {
   .latest_offers .custom_p {
     padding-right: 8px;
     padding-left: 8px;
@@ -244,6 +244,12 @@ header .bg-light {
 }
 .latest_offers .c_3 {
   padding: 144px 0 127px 16px;
+  margin-top: 11px;
+}
+@media screen and (min-width: 992px) {
+  .latest_offers .c_3 {
+    margin-top: 0;
+  }
 }
 .latest_offers .c_3 img {
   height: 367px;
@@ -253,6 +259,12 @@ header .bg-light {
 .latest_offers .c_4 {
   padding-top: 95px;
   padding-bottom: 79px;
+  margin-top: 11px;
+}
+@media screen and (min-width: 992px) {
+  .latest_offers .c_4 {
+    margin-top: 0;
+  }
 }
 .latest_offers .c_4 img {
   margin-top: 22px;

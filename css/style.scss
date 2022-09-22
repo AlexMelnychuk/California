@@ -179,7 +179,7 @@ header {
   padding-bottom: 68px;
 
   .custom_p {
-    @include min-screen(1140px){
+    @include min-screen(992px){
       padding-right: 8px;
       padding-left: 8px;
     }
@@ -264,7 +264,7 @@ header {
     background-color: $white_color;
     border-radius: $card_radius;
     padding-right: 42px;
-    @include min-screen(1170px) {
+     @include min-screen(1170px) {
       display: flex;
       &:hover {
         position: relative;
@@ -296,6 +296,10 @@ header {
 
   .c_3 {
     padding: 144px 0 127px 16px;
+    margin-top: 11px;
+    @include min-screen(992px) {
+      margin-top: 0;
+    }
 
     img {
       height: 367px;
@@ -308,6 +312,10 @@ header {
   .c_4 {
     padding-top: 95px;
     padding-bottom: 79px;
+    margin-top: 11px;
+    @include min-screen(992px) {
+      margin-top: 0;
+    }
 
     img {
       margin-top: 22px;

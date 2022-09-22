@@ -299,6 +299,12 @@ header .bg-light {
   min-height: 400px;
   background-color: #F8F9FA;
   border-radius: 16px;
+  margin-top: 11px;
+}
+@media screen and (min-width: 992px) {
+  .save_selled .card {
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 1170px) {
   .save_selled .card:hover {

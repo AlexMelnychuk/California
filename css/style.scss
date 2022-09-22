@@ -355,6 +355,10 @@ header {
     min-height: 400px;
     background-color: #F8F9FA;;
     border-radius: 16px;
+    margin-top: 11px;
+    @include min-screen(992px) {
+      margin-top: 0;
+    }
     @include min-screen(1170px) {
       &:hover {
         position: relative;
